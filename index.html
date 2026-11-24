@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Craver - Fast, Fresh, and Delicious Food Delivered to Your Doorstep.">
+  <title>Craver | Fast & Fresh Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <p>🎉 <strong>Flat 50% OFF</strong> on your first 3 orders! Use code: <span class="promo-code">CRAVE50</span></p>
+      <div class="top-bar-links">
+        <span>📍 Deliver to: <strong>Hyderabad, Central</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand">
+        <span class="brand-icon">🍔</span> Crave<span>r</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu">
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#popular-dishes" class="nav-link">Popular Dishes</a>
+        <a href="#restaurants" class="nav-link">Top Restaurants</a>
+        <a href="#offers" class="nav-link">Deals & Offers</a>
+        <a href="#popular-dishes" class="btn btn-primary nav-cta">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <span class="hero-tag">⚡ Ultra-Fast 30 Min Delivery</span>
+        <h1 class="hero-heading">Delicious Food, Delivered <span class="accent">Hot &amp; Fresh</span></h1>
+        <p class="hero-desc">
+          Explore curated gourmet cuisines from top-rated kitchens and neighborhood restaurants right to your doorstep.
+        </p>
+        <div class="search-box">
+          <input type="text" placeholder="Search pizza, biryani, burgers, pasta..." class="search-input">
+          <button type="button" class="btn btn-primary search-btn">Find Food</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>500+</strong>
+            <span>Partner Restaurants</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>20k+</strong>
+            <span>Happy Foodies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>4.9 ★</strong>
+            <span>Customer Rating</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="floating-dish-card dish-main">
+            <span class="dish-emoji">🍕</span>
+            <h3>Artisan Truffle Pizza</h3>
+            <p>Fresh mozzarella, basil &amp; truffle drizzle</p>
+            <div class="card-bottom">
+              <span class="price">$14.99</span>
+              <a href="#popular-dishes" class="btn-mini">Order</a>
+            </div>
+          </div>
+          <div class="floating-badge badge-top">
+            <span>🔥</span> 1.2k+ Ordered Today
+          </div>
+          <div class="floating-badge badge-bottom">
+            <span>⏱️</span> Avg. Delivery 24 mins
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Categories Section -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Taste Explorer</span>
+        <h2 class="section-heading">Browse By Popular Categories</h2>
+        <p class="section-desc">Select from your favorite food cravings curated by top chefs</p>
+      </div>
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="category-icon-bg">🍕</div>
+          <h3>Italian Pizzas</h3>
+          <p>42 Places</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon-bg">🍔</div>
+          <h3>Gourmet Burgers</h3>
+          <p>38 Places</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon-bg">🍛</div>
+          <h3>Spiced Biryani</h3>
+          <p>56 Places</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon-bg">🍣</div>
+          <h3>Sushi & Asian</h3>
+          <p>24 Places</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon-bg">🥗</div>
+          <h3>Healthy Bowls</h3>
+          <p>31 Places</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon-bg">🍰</div>
+          <h3>Desserts & Bakes</h3>
+          <p>49 Places</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Dishes Section -->
+  <section id="popular-dishes" class="dishes">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Trending Now</span>
+        <h2 class="section-heading">Most Popular Dishes</h2>
+        <p class="section-desc">Order our crowd-favorites loved by thousands of food lovers</p>
+      </div>
+      <div class="dish-grid">
+        <!-- Dish 1 -->
+        <article class="dish-card">
+          <div class="dish-image img-1">
+            <span class="food-badge">Bestseller</span>
+            <span class="emoji-large">🍔</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-rating">★ 4.9 <span>(420+ reviews)</span></div>
+            <h3 class="dish-name">Smoky BBQ Angus Burger</h3>
+            <p class="dish-restaurant">From <strong>The Burger Co.</strong></p>
+            <div class="dish-footer">
+              <div class="price-wrap">
+                <span class="price-val">$9.99</span>
+                <span class="old-price">$12.99</span>
+              </div>
+              <button class="btn btn-order" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="dish-card">
+          <div class="dish-image img-2">
+            <span class="food-badge badge-green">Pure Veg</span>
+            <span class="emoji-large">🍕</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-rating">★ 4.8 <span>(310+ reviews)</span></div>
+            <h3 class="dish-name">Classic Margherita Supreme</h3>
+            <p class="dish-restaurant">From <strong>Bella Italia Oven</strong></p>
+            <div class="dish-footer">
+              <div class="price-wrap">
+                <span class="price-val">$13.50</span>
+                <span class="old-price">$16.00</span>
+              </div>
+              <button class="btn btn-order" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="dish-card">
+          <div class="dish-image img-3">
+            <span class="food-badge">Chef Special</span>
+            <span class="emoji-large">🍛</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-rating">★ 5.0 <span>(680+ reviews)</span></div>
+            <h3 class="dish-name">Hyderabadi Dum Biryani</h3>
+            <p class="dish-restaurant">From <strong>Royal Spices Kitchen</strong></p>
+            <div class="dish-footer">
+              <div class="price-wrap">
+                <span class="price-val">$11.99</span>
+                <span class="old-price">$14.50</span>
+              </div>
+              <button class="btn btn-order" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="dish-card">
+          <div class="dish-image img-4">
+            <span class="food-badge">Popular</span>
+            <span class="emoji-large">🍜</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-rating">★ 4.7 <span>(190+ reviews)</span></div>
+            <h3 class="dish-name">Tokyo Shoyu Miso Ramen</h3>
+            <p class="dish-restaurant">From <strong>Noodle Nook House</strong></p>
+            <div class="dish-footer">
+              <div class="price-wrap">
+                <span class="price-val">$12.49</span>
+                <span class="old-price">$15.00</span>
+              </div>
+              <button class="btn btn-order" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 5 -->
+        <article class="dish-card">
+          <div class="dish-image img-5">
+            <span class="food-badge badge-green">Healthy</span>
+            <span class="emoji-large">🥗</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-rating">★ 4.8 <span>(210+ reviews)</span></div>
+            <h3 class="dish-name">Avocado Quinoa Green Bowl</h3>
+            <p class="dish-restaurant">From <strong>Green Clean Greens</strong></p>
+            <div class="dish-footer">
+              <div class="price-wrap">
+                <span class="price-val">$10.99</span>
+                <span class="old-price">$13.99</span>
+              </div>
+              <button class="btn btn-order" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 6 -->
+        <article class="dish-card">
+          <div class="dish-image img-6">
+            <span class="food-badge">Sweet Tooth</span>
+            <span class="emoji-large">🍩</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-rating">★ 4.9 <span>(540+ reviews)</span></div>
+            <h3 class="dish-name">Belgian Chocolate Lava Melt</h3>
+            <p class="dish-restaurant">From <strong>Sweet Crumb Bakery</strong></p>
+            <div class="dish-footer">
+              <div class="price-wrap">
+                <span class="price-val">$7.49</span>
+                <span class="old-price">$9.00</span>
+              </div>
+              <button class="btn btn-order" type="button">Add to Order</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Cards Section -->
+  <section id="restaurants" class="restaurants">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Featured Kitchens</span>
+        <h2 class="section-heading">Top Rated Partner Restaurants</h2>
+        <p class="section-desc">Hand-picked culinary gems with strict hygiene and fast delivery standards</p>
+      </div>
+      <div class="restaurant-grid">
+        <!-- Restaurant 1 -->
+        <article class="restaurant-card">
+          <div class="restaurant-header header-1">
+            <span class="rest-badge">★ 4.9 Rating</span>
+            <span class="rest-tag">Free Delivery</span>
+          </div>
+          <div class="restaurant-body">
+            <h3>Bella Italia Stone Oven</h3>
+            <p class="cuisines">Wood-fired Pizzas, Handmade Pasta, Gelato</p>
+            <div class="rest-meta">
+              <span>⏱️ 20-30 min</span>
+              <span>💰 $$ • Min $15</span>
+              <span>📍 1.8 km</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 2 -->
+        <article class="restaurant-card">
+          <div class="restaurant-header header-2">
+            <span class="rest-badge">★ 4.8 Rating</span>
+            <span class="rest-tag">20% Off</span>
+          </div>
+          <div class="restaurant-body">
+            <h3>The Grill &amp; Smoke House</h3>
+            <p class="cuisines">Smoked Ribs, Craft Burgers, Loaded Fries</p>
+            <div class="rest-meta">
+              <span>⏱️ 25-35 min</span>
+              <span>💰 $$$ • Min $20</span>
+              <span>📍 2.4 km</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 3 -->
+        <article class="restaurant-card">
+          <div class="restaurant-header header-3">
+            <span class="rest-badge">★ 5.0 Rating</span>
+            <span class="rest-tag">Trending #1</span>
+          </div>
+          <div class="restaurant-body">
+            <h3>Royal Mughal Palace</h3>
+            <p class="cuisines">Biryani, Kebabs, Mughlai Curries, Naan</p>
+            <div class="rest-meta">
+              <span>⏱️ 15-25 min</span>
+              <span>💰 $$ • Min $12</span>
+              <span>📍 1.2 km</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Banner -->
+  <section id="offers" class="offers">
+    <div class="container">
+      <div class="offer-banner">
+        <div class="offer-content">
+          <span class="offer-tag">Weekend Mega Deal</span>
+          <h2>Craving More? Save Up to 60% On Family Bundles!</h2>
+          <p>Order group platters from selected premier restaurants and enjoy instant cashback and complimentary dessert bowls.</p>
+          <div class="offer-buttons">
+            <a href="#popular-dishes" class="btn btn-white">Claim Offer</a>
+            <span class="terms">*Valid until Sunday midnight</span>
+          </div>
+        </div>
+        <div class="offer-badge-box">
+          <span class="offer-percent">60%</span>
+          <span class="offer-off">OFF</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand footer-brand">
+          <span class="brand-icon">🍔</span> Crave<span>r</span>
+        </div>
+        <p>Your favorite meals delivered at lightning speed with uncompromising taste and quality.</p>
+        <p class="copyright">&copy; 2026 Craver Inc. All rights reserved.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="#categories">Food Categories</a></li>
+          <li><a href="#popular-dishes">Trending Dishes</a></li>
+          <li><a href="#restaurants">Partner Kitchens</a></li>
+          <li><a href="#offers">Exclusive Deals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About &amp; Help</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Safety Protocols</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Partner With Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Delivery Hours</h4>
+        <p><strong>Monday - Sunday:</strong></p>
+        <p>8:00 AM – 2:00 AM</p>
+        <p class="contact-support">📞 Emergency Helpline: 1800-CRAVER</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
